@@ -1,0 +1,10 @@
+include ../../components/footer-navigation/footer-navigation
+include ../../components/browser-compatibility/browser-compatibility
+
+footer#footer.footer
+    .container
+        .footer__navigation
+            +footerNav('Recruitment Info', {name: 'Candidate First Name: Ruslan', link: '#'}, {name: 'Candidate Last Name: Andreev', link: '#'}, {name: 'Spent Time: 10 hours', link: '#'}, {name: 'Email: sprut1980@gmail.com', link: 'mailto:sprut1980@gmail.com'}, {name: 'Test Date: 30.05.2019', link: '#'})(class="left")
+            +footerNav('Resources', {name: 'Loader icon - search on Fontello.com', link: 'http://fontello.com/'}, {name: 'Icons - Entypo', link: 'http://entypo.com/'}, {name: 'Fonts - search in this file', link: '#'}, {name: 'Background - standart situation: designer lose file', link: '#'})(class="center")
+            +footerNav('Navigation', {name: 'Development', link: '#'}, {name: 'Application', link: '#'}, {name: 'Holding', link: '#'}, {name: 'About', link: '#'})(class="right")
+            +browserCompatible()

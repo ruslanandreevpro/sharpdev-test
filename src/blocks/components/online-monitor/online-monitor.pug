@@ -1,0 +1,21 @@
+mixin onlineMonitor()
+    .onlineMonitor
+        h3 Online Monitor
+        ._content
+            div#lds-spinner.lds-spinner
+                div
+                div
+                div
+                div
+                div
+                div
+                div
+                div
+                div
+                div
+                div
+                div
+                p Loading...
+        .btn
+            button(type="button" onclick="document.getElementById('lds-spinner').style.display = 'block'; document.getElementById('overlay').style.display = 'block'") Connect
+        div#overlay.overlay

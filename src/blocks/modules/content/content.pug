@@ -1,0 +1,20 @@
+include ../../components/page-title/page-title
+include ../../components/section-title/section-title
+include ../../components/product-items/product-items
+include ../../components/input/input
+include ../../components/signup-form/signup-form
+include ../../components/online-monitor/online-monitor
+
+section#content.content
+    .container
+        .main
+            ._title
+                +pageTitle('ParrotWings Exchange')
+                +input('search', 'text', '', 'Search...', true, '208px', '38px', false)
+            ._section
+                +sectionTitle('Products')
+                +productItems({id: '1', props: '2 props', title: 'Unlimited exchange'}, {id: '2', props: '1 prop', title: 'International excha...'}, {id: '3', props: '3 props, all', title: 'Additional services'}, {id: '4', props: '5 props', title: 'Support'}, {id: '5', props: '2 props', title: 'Holiday works'}, {id: '6', props: 'not in access', title: 'Postal delivery'}, {id: '7', props: '2 props', title: 'Document manag...'}, {id: '8', props: '1 prop', title: 'Promotions '})
+                a(href="#") More options
+        .sidebar
+            +signupForm({name: 'firstName', type: 'text', placeholder: 'First Name'},{name: 'lastName', type: 'text', placeholder: 'Last Name'},{name: 'email', type: 'email', placeholder: 'Email'})
+            +onlineMonitor()

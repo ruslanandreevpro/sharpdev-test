@@ -1,0 +1,53 @@
+.browserCompatible {
+  text-align: right;
+  width: 270px;
+  align-self: flex-end;
+
+  img {
+    opacity: .5;
+    height: 25px;
+  }
+
+  p {
+    font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+    font-weight: normal;
+    font-size: 14px;
+    color: #5c5c5c;
+  }
+}
+
+@media screen and (max-width: 1199px) {
+
+  .browserCompatible {
+    width: 200px;
+
+    p {
+      font-size: 14px;
+    }
+  }
+}
+
+@media screen and (max-width: 991px) {
+
+  .browserCompatible {
+    width: 100%;
+    text-align: center;
+    margin-top: 30px;
+
+    p {
+      font-size: 14px;
+    }
+  }
+}
+
+@media screen and (max-width: 767px) {
+
+}
+
+@media screen and (max-width: 575px) {
+
+}
+
+@media screen and (max-width: 480px) {
+
+}

@@ -1,0 +1,7 @@
+mixin socialLine(...items)
+    ul.list
+        each item in items
+            li.item
+                a(href=item.link)
+                    - var img = "./img/icon-" + item.name + ".png"
+                    img(class=item.class src=img width="auto" height=item.height)

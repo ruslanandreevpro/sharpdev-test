@@ -1,0 +1,176 @@
+.content {
+  padding-top: 154px;
+
+  .container {
+    background: url('../img/content-bg.jpg');
+    //padding: 35px 45px;
+    display: flex;
+  }
+
+  .main {
+    width: 700px;
+    padding: 45px 0 45px 45px;
+    position: relative;
+
+    &__title {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      margin-top: 10px;
+    }
+
+    &__section {
+      margin-top: 25px;
+      position: relative;
+      text-align: center;
+
+      &:before {
+        content: '';
+        width: 19px;
+        height: 8px;
+        border: none;
+        background-color: #933435;
+        position: absolute;
+        top: 15px;
+        left: -25px;
+      }
+
+      a {
+        font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+        font-weight: normal;
+        font-size: 16px;
+        color: #444444;
+        text-decoration: underline;
+        text-underline-position: under;
+      }
+    }
+  }
+
+  .sidebar {
+    width: 340px;
+    padding: 45px;
+
+    .signupForm {
+
+    }
+
+    .onlineMonitor {
+      margin-top: 25px;
+    }
+  }
+}
+
+@media screen and (max-width: 1199px) {
+
+}
+
+@media screen and (max-width: 991px) {
+
+  .content {
+    padding-top: 154px;
+
+    .container {
+      display: block;
+    }
+
+    .main {
+      width: calc(100% - 90px);
+      padding: 45px;
+
+      &__title {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        margin-top: 10px;
+      }
+    }
+
+    .sidebar {
+      width: calc(100% - 90px);
+      padding: 0 45px 45px 45px;
+
+      .signupForm {
+
+      }
+
+      .onlineMonitor {
+        margin-top: 25px;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 767px) {
+
+  .content {
+    padding-top: 154px;
+
+    .main {
+      width: calc(100% - 90px);
+      padding: 45px;
+
+      &__title {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: space-between;
+        margin-top: 0;
+
+        >div {
+          order: 1;
+        }
+
+        h1 {
+          order: 2;
+          margin-top: 15px;
+        }
+      }
+    }
+
+    .sidebar {
+      width: calc(100% - 90px);
+      padding: 0 45px 45px 45px;
+
+      .signupForm {
+
+      }
+
+      .onlineMonitor {
+        margin-top: 25px;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 575px) {
+
+}
+
+@media screen and (max-width: 375px) {
+
+  .content {
+
+    .main {
+
+      &__section {
+
+        &:before {
+          height: 4px;
+        }
+      }
+    }
+
+    .sidebar {
+      width: calc(100% - 90px);
+      padding: 0 45px 45px 45px;
+
+      .signupForm {
+
+      }
+
+      .onlineMonitor {
+        margin-top: 25px;
+      }
+    }
+  }
+}

@@ -1,0 +1,7 @@
+mixin footerNav(title, ...items)
+    .footerNav(class=attributes.class)
+        h3 #{title}
+        ul._list
+            each item in items
+                li
+                    a(href=item.link target="_blank") #{item.name}

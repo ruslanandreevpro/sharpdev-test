@@ -1,0 +1,4 @@
+mixin input(name, type, value='', placeholder, search=false, width, height, required=false)
+    div(id=search ? 'searchID' : '' class=attributes.class style={position: 'relative', width: width})
+        input(id=name class=search ? 'search' : 'inputField' name=name type=type value=value placeholder=placeholder style={width: width, height: height} required=required)
+        div(class=search ? 'searchField' : '')

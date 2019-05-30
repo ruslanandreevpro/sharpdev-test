@@ -1,0 +1,8 @@
+mixin nav(...links)
+    nav#topmenu.topmenu
+        ul._index
+            each link in links
+                li._index.topmenu__index_item
+                    a(href="#") #{link}
+            .toggle(onclick="const x = document.getElementById('topmenu'); if (x.classList) {x.classList.toggle('responsive');}")
+                a(href="javascript:void(0);" class="icon")

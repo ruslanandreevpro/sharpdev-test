@@ -1,0 +1,64 @@
+.list {
+  list-style: none;
+  display: flex;
+
+  .item {
+    margin-right: 90px;
+
+    &:last-child {
+      margin-right: 0;
+    }
+
+    a {
+      
+      img {
+
+      }
+    }
+
+    &:hover {
+
+      a {
+
+        img {
+          filter: brightness(300%);
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 1199px) {
+
+  .list {
+
+    .item {
+      margin-right: 65px;
+
+    }
+  }
+}
+
+@media screen and (max-width: 991px) {
+
+  .list {
+    justify-content: space-between;
+
+    .item {
+      margin-right: 0;
+
+    }
+  }
+}
+
+@media screen and (max-width: 767px) {
+
+}
+
+@media screen and (max-width: 575px) {
+
+}
+
+@media screen and (max-width: 480px) {
+
+}

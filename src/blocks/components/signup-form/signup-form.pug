@@ -1,0 +1,11 @@
+include ../input/input
+
+mixin signupForm(...items)
+    .signupForm
+        h3 Sign Up
+        form
+            each item in items
+                +input(item.name, item.type, '', item.placeholder, false, 'calc(100% - 15px)', '38px', true)(class="fieldset")
+            p By creating a PW Exchange Account you acknowledge that you have read, understood and agree to the #[a(href="#") Terms&nbsp;of&nbsp;Use] and #[a(href="#") Privacy&nbsp;Policy].
+            .btn
+                button(type="submit") Sign Up

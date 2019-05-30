@@ -1,0 +1,18 @@
+mixin productItems(...items)
+    .products
+        ul._index
+            each item in items
+                li._item
+                    - var img = "./img/item-" + item.id + ".jpg"
+                    - var idx = "tooltip-" + item.id
+                    .photo
+                        img(src=img alt=item.title)
+                    .props
+                        p #{item.props}
+                    .title
+                        h4 #{item.title}
+                    .order
+                        button(id=idx) Order
+                    #tooltip.tooltip(style="display: none")
+                        h5 Popup header
+                        p Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore.
